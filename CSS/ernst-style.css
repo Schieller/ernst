@@ -1,0 +1,1452 @@
+/**
+ * @env: lumsites
+ * @customerName: Persgroep
+ * @customerId: 5284250454851584
+ * @account: lumapps-admin@persgroep.net
+ *
+ * @instanceName: Ernst
+ * @instanceId: 6022693771280384
+ *
+ * @styleName: Default
+ * @styleId: 5490185338093568
+ * @styleType: Global site
+ * @kind: custom
+ *
+ * @url: https://sites.lumapps.com/a/persgroep/ernst
+ */
+
+@charset "UTF-8";
+body {
+  background-color: #F5F5F5 !important;
+}
+
+body p, body a, body span, body div, body h1, body h2, body h3 {
+  font-family: "Montserrat", "Sans Serif";
+}
+
+:root {
+  --mdc-theme-primary: #004F3A !important;
+  --mdc-theme-on-surface: #004F3A !important;
+  --mdc-theme-secondary: #004F3A !important;
+}
+
+/* ==================================================
+    Top-bar (LumApps Classes)
+    ================================================== */
+/* header-top: background color */
+.header-top--theme-light .header-top__search .search-engine.search-engine--autocomplete {
+  background-color: #FFF !important;
+}
+
+/*  header-top: logo size (default 80%) */
+.header-top__logo img {
+  max-width: 100% !important;
+}
+
+/* Hide directory button */
+.directory-favorites__toggle {
+  display: none !important;
+}
+
+.header-top__contribution {
+ 	display: none !important;
+}
+
+/* ==================================================
+   Scrollbar
+   ================================================== */
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+
+/* Navigation: font size and line height*/
+a.main-nav__link {
+  font-size: 14px !important;
+  line-height: 75px;
+}
+
+/* Navigation: shadow effect */
+.header-main-nav {
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*Change the padding of the menu items so the font can be a bit bigger*/
+.header-main-nav .main-nav__link-wrapper {
+  padding: 0 10px !important;
+}
+
+/*Animate underline for menu in header*/
+.main-nav__link {
+  line-height: 75px;
+}
+
+.main-nav__link span {
+  position: relative;
+  display: inline-block;
+}
+
+.main-nav__link span,
+.main-nav__link span:hover,
+.main-nav__link span:focus,
+.main-nav__link span:active {
+  text-decoration: none;
+}
+
+.main-nav__link span::after {
+  content: "";
+  position: absolute;
+}
+
+.main-nav__link span::after {
+  top: 65%;
+  height: 1.3px;
+  width: 0%;
+  left: 0%;
+  background-color: #004F3A;
+  -webkit-transition: 0.5s ease all .3s;
+  transition: 0.5s ease all .3s;
+  border-radius: 2px;
+}
+
+.main-nav__link:hover span::after {
+  width: 90%;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+/* ==================================================
+   Footer  (custom classes)
+   ================================================== */
+.footer {
+  margin: 0px;
+}
+
+.footer-wrapper {
+  background: #004F3A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px;
+}
+
+.footer-content {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-columns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 2.5rem 0;
+  max-width: 1350px;
+  margin: auto;
+}
+
+.footer-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 33%;
+  color: #FFF;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.footer-sidebar a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.footer-main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.footer-logo {
+  width: 80%;
+}
+
+.footer-first {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.footer-second {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.footer-address {
+  font-style: normal;
+}
+
+.street,
+.city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* ==================================================
+    About Ernst
+    ================================================== */
+.widget--about-ernst .user-block-wrapper--view-mode-basic::after {
+  height: 0px !important;
+}
+
+.widget--about-ernst .user-block-wrapper--view-mode-basic {
+  display: inline-block !important;
+  width: 50% !important;
+}
+
+/* ==================================================
+   Helper Classes  (custom classes)
+   ================================================== */
+/* Hide widgets (lower opacity in designer mode) */
+.widget--hide {
+  display: none;
+}
+
+.content--designer-mode .widget--hide {
+  display: block !important;
+  opacity: 0.2 !important;
+}
+
+/* Change color of <ul> & <ol> to white */
+.component-row--12px-margin-bottom-removal {
+  margin-bottom: -12px;
+}
+
+.widget--image-border-6px {
+  border-radius: 6px;
+}
+
+.search-filter .search-filter--closed-mode {
+  width: 240px;
+}
+
+.awt-searchFilter-cont .awt-searchFilter-input {
+  display: none;
+}
+
+.widget--blue-box-white-text, .widget--blue-box-white-text u {
+  color: #FFF !important;
+}
+
+.component-cell--goRelative {
+  position: relative !important;
+}
+
+.widget--goLeftBottom .widget-html__content {
+  position: absolute !important;
+  left: 0 !important;
+  bottom: 0 !important;
+}
+
+/* hide code editing icon in wysiwig */
+.app-content--module-disable--code--wysiwyg #html-1,
+.app-content--module-disable--code--wysiwyg #html-2,
+.app-content--module-disable--code--wysiwyg #html-3,
+.app-content--module-disable--code--wysiwyg #html-4,
+.app-content--module-disable--code--wysiwyg #html-5 {
+  display: none !important;
+}
+
+/* pointer and hover */
+.widget--point-and-hover {
+  cursor: pointer !important;
+}
+
+.widget--point-and-hover:hover,
+.widget--point-and-hover:focus {
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.22) !important;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.22) !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* ==================================================
+    Bestyrelsesvalg
+    ================================================== */
+.widget--bestyrelsesvalg .m2 .freebirdFormviewerViewHeaderTitle {
+  font-size: 24px !important;
+}
+
+.widget-content-filter__footer--extended .widget-content-filter__submit {
+  background-color: #004F3A !important;
+}
+
+.widget--opacity-09.widget {
+  opacity: 0.9;
+}
+
+.lumx-progress--theme-light .lumx-progress-circular__double-bounce1, .lumx-progress--theme-light .lumx-progress-circular__path, .lumx-progress--theme-light .lumx-progress-circular__double-bounce2 {
+  background-color: #004F3A !important;
+  stroke: #004F3A !important;
+}
+
+.lumx-progress--theme-light .lumx-progress-linear__line1, .lumx-progress--theme-light .lumx-progress-linear__line2 {
+  background-color: #004F3A !important;
+  stroke: #004F3A !important;
+}
+
+.lumx-progress-tracker__foreground-bar {
+  background-color: #004F3A !important;
+  stroke: #004F3A !important;
+}
+
+.lumx-progress-tracker-step--is-active .lumx-progress-tracker-step__state, .lumx-progress-tracker-step--is-complete .lumx-progress-tracker-step__state {
+  color: #004F3A !important;
+  stroke: #004F3A !important;
+}
+
+#main {
+  background-position: top;
+  background-attachment: fixed;
+}
+
+/********************/
+/*       News       */
+/********************/
+.component-cell--is-plain > .component-cell__components .widget .widget-content {
+  /* border-left */
+  border-left-color: #004F3A !important;
+  /* title */
+}
+
+.component-cell--is-plain > .component-cell__components .widget .widget-content .widget-wrapper .widget-transclude .widget-html__content.fr-element p span span {
+  color: #004F3A !important;
+}
+
+/********************/
+/* Find en kollega  */
+/********************/
+.user-directory__header.module__header {
+  /* title */
+  /* filter */
+}
+
+.user-directory__header.module__header .user-directory__title.module__title {
+  color: #004F3A !important;
+  font-size: 44px;
+}
+
+.user-directory__header.module__header .user-directory__actions button.user-directory__filter--is-active {
+  color: #004F3A !important;
+}
+
+.user-directory__col-right {
+  /* filter - department */
+}
+
+.user-directory__col-right .lumx-text-field--theme-light {
+  /* filter - input header*/
+  /* filter - input footer */
+}
+
+.user-directory__col-right .lumx-text-field--theme-light.lumx-text-field--is-focus .lumx-text-field__label {
+  color: #004F3A !important;
+}
+
+.user-directory__col-right .lumx-text-field--theme-light .lumx-text-field__wrapper::after {
+  background-color: #004F3A !important;
+}
+
+.user-directory__col-right .lumx-select {
+  /* header - focus */
+  /* header - open */
+  /* header - after */
+}
+
+.user-directory__col-right .lumx-select.lumx-select--is-open .lumx-select__header label.lumx-select__label {
+  color: #004F3A !important;
+}
+
+.user-directory__col-right .lumx-select.lumx-select--is-focus .lumx-select__header .lumx-select__label {
+  color: #004F3A !important;
+}
+
+.user-directory__col-right .lumx-select .lumx-select__wrapper::after {
+  background-color: #004F3A !important;
+}
+
+.user-directory__col-right .lumx-select .lumx-select__wrapper a.lumx-chip--is-unselected.lumx-chip--color-dark {
+  background-color: #9ad0B8;
+}
+
+.lumx-button--size-m.lumx-button--emphasis-low.lumx-button--variant-button {
+  opacity: .5;
+}
+
+.lumx-list-item.lumx-list-item--size-tiny {
+  /* filter - group list selected */
+  /* filter -  group list hovering*/
+}
+
+.lumx-list-item.lumx-list-item--size-tiny .lumx-list-item__link--is-selected {
+  background-color: #004F3A !important;
+  color: #FFF !important;
+  /* filter - group list selected hovering */
+}
+
+.lumx-list-item.lumx-list-item--size-tiny .lumx-list-item__link--is-selected:hover {
+  background-color: #9ad0B8 !important;
+}
+
+.lumx-list-item.lumx-list-item--size-tiny:hover {
+  background-color: #9ad0B8 !important;
+}
+
+.widget.widget-title.widget-7769e501-470e-400b-8cbd-eeb415c0c9e6.widget--has-border-bottom.widget--theme-light.widget-editable .widget--l {
+  border-left-color: #004F3A !important;
+  color: #004F3A !important;
+}
+
+/*********************/
+/* Medarbejdertilbud */
+/*********************/
+.component-cell__components .widget {
+  border-left-color: #004F3A !important;
+}
+
+.component-cell__components .widget .widget-title__title {
+  color: #004F3A;
+  font-size: 44px;
+  font-weight: 500;
+}
+
+/**********/
+/* Profil */
+/**********/
+.social-profile__sidebar .social-profile__user .lumx-button--color-primary.lumx-button--emphasis-high.lumx-button--theme-light {
+  background-color: #9ad0B8;
+}
+
+.social-profile__sidebar .social-profile-status .social-profile-status__submit {
+  background-color: #004F3A;
+}
+
+.social-profile__sidebar .social-profile__nav a i, .social-profile__sidebar .social-profile__nav a span, .social-profile__sidebar .social-profile__user-settings a i, .social-profile__sidebar .social-profile__user-settings a span {
+  color: #004F3A !important;
+  font-weight: 700;
+}
+
+/*************/
+/* Community */
+/*************/
+.community__new-post-btn-wrapper {
+  bottom: 170px;
+}
+
+.community__new-post-btn-wrapper .community__new-post-btn {
+  background-color: #004F3A;
+}
+
+.community__new-post-btn-wrapper .community__new-post-btn:hover {
+  background-color: #9ad0B8;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.lumx-dialog__wrapper .lumx-dialog__footer .lumx-button--color-primary.lumx-button--emphasis-high.lumx-button--theme-light {
+  background-color: #004F3A !important;
+}
+
+.post-block .post-block__wrapper .user-block__profile-picture-wrapper .user-block__admin-badge {
+  background-color: #004F3A !important;
+}
+
+/* Menu */
+.widget--menu {
+  background-image: url("https://live.lumappsusercontent.com/serve/AMIfv95wipmB1A-a5Pv7wd8RXO8BKtssPBSEY64afnZPysjl8trJfPqrhiPLDrPp7WZVeDlx3zm2Y9U8E7ermOSitmaBWrpMQmwaIB_762I60EvLvaiN1gh31a5U96Ex7NlN_McNssseWBayPKtc0dEEd6cJ5kjMdQ/chef.svg") !important;
+  background-size: 10% !important;
+  background-position: right 45px bottom !important;
+}
+
+.widget--menu .widget-footer__link {
+  border: 1px solid #FFF;
+  padding: 7px;
+  font-size: 15px !important;
+  color: white !important;
+  border-radius: 6px;
+  margin-bottom: 5px;
+}
+
+.widget--menu-green {
+  background-color: #004F3A !important;
+}
+
+.widget--menu-blue {
+  background-color: #3E539D !important;
+}
+
+/* ==================================================
+  Widget-type: HTML, Widget-Title: Guestnetwork (Custom Classes)
+   ================================================== */
+.widget--wifi {
+  background-image: url("https://live.lumappsusercontent.com/serve/AMIfv97IcACH2KtyvaBAVI5jg2EMJ1PR925dRkGBUo8Oz2FM-ysulY1puwzC7SB3VlZw-Iel7PaZeuztj16cNYq9iLauP8DaA1FY9z-ZAEEq5TKoBLtPwhgs8mufZUVstUVV0SpeyS7tLZ6m86ODgoS3nk5vQOWvYA/wifi.svg") !important;
+  background-size: 13% !important;
+  background-position: right 35px bottom 10px !important;
+}
+
+.widget--wifi:not(.widget--is-folded) {
+  background-size: 10% !important;
+}
+
+.widget--wifi div p {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.widget--wifi div p a {
+  color: #FFF;
+}
+
+.widget--wifi-blue {
+  background-color: #3E539D !important;
+}
+
+.widget--wifi-green {
+  background-color: #004F3A !important;
+}
+
+/* Setting title and byline visualization */
+.widget--title .widget-title__title {
+  font-weight: 700 !important;
+  font-size: 44px;
+}
+
+.widget--byline .widget-meta-publication-date {
+  font-weight: 300 !important;
+  font-size: 13px;
+}
+
+/* ==================================================
+    News
+================================================== */
+.widget--news .content-block__thumbnail {
+  border-radius: 6px;
+}
+
+.widget--news .content-block--default-style .content-block--theme-light {
+  border-bottom: 1px solid rgba(27, 54, 93, 0.1);
+}
+
+.widget--news .widget-content-filter__footer--extended .widget-content-filter__submit {
+  border-radius: 6px;
+}
+
+/* ===========================================================
+      Widget-type: HTML - Used for threat levels  (Custom Classes)
+   =========================================================== */
+.widget--tl-box .threat-level {
+  display: block;
+  text-align: center;
+  line-height: 4.5;
+}
+
+.widget--tl-box .threat-level::before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #000000;
+  vertical-align: middle;
+}
+
+.widget--tl-box .threat-level::after {
+  content: "Threat Level";
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 50px;
+  font-size: 24px;
+  letter-spacing: .39px;
+}
+
+.widget--tl-green .threat-level::before {
+  background-color: #00E256 !important;
+}
+
+.widget--tl-green .threat-level::after {
+  content: "Dagligt beredskab";
+}
+
+.widget--tl-orange .threat-level::before {
+  background-color: #FFC400 !important;
+}
+
+.widget--tl-orange .threat-level::after {
+  content: "Forhøjet beredskab";
+}
+
+.widget--tl-red .threat-level::before {
+  background-color: #FF5700 !important;
+}
+
+.widget--tl-red .threat-level::after {
+  content: "Stærkt forhøjet beredskab";
+}
+
+/* ===========================================================
+      Widget-type: HTML - Used for blue boxes  (Custom Classes)
+   =========================================================== */
+/* Box Shadow */
+.widget--box {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  cursor: pointer !important;
+}
+
+/* Box shadow on hover */
+.widget--box:hover,
+.widget--box:focus {
+  background-color: #004F3A !important;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.22) !important;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.22) !important;
+  z-index: 995;
+}
+
+.content--designer-mode .widget--box:focus, .content--designer-mode .widget--box:hover {
+  z-index: 1000;
+}
+
+/* Box content */
+.widget--box .box {
+  padding: 32px;
+  text-align: center;
+}
+
+/* Box Link */
+.box-link {
+  color: #004F3A !important;
+}
+
+/* Box link hover */
+.widget--box:hover .box-link,
+.widget--box:focus .box-link {
+  color: #FFF !important;
+  text-decoration: none !important;
+}
+
+/* Box Icons */
+.widget--box .ernst-icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-size: cover;
+  -webkit-filter: invert(20%) sepia(45%) saturate(1358%) hue-rotate(125deg) brightness(100%) contrast(101%);
+          filter: invert(20%) sepia(45%) saturate(1358%) hue-rotate(125deg) brightness(100%) contrast(101%);
+}
+
+.widget--box:hover .ernst-icon,
+.widget--box:focus .ernst-icon {
+  -webkit-filter: invert(99%) sepia(2%) saturate(353%) hue-rotate(166deg) brightness(119%) contrast(100%);
+          filter: invert(99%) sepia(2%) saturate(353%) hue-rotate(166deg) brightness(119%) contrast(100%);
+}
+
+/* ===========================================================
+      Widget-type: HTML - used for access to system boxes  (Custom Classes)
+   =========================================================== */
+.widget--AtS {
+  width: 1130px;
+  min-height: 140px;
+  border-radius: 6px;
+  margin: 0px 20px 0px 20px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.widget--AtS .handle-left {
+  display: inline-block;
+  width: 140px;
+  padding: 20px;
+  height: auto;
+}
+
+.widget--AtS .handle-middle {
+  display: inline-block;
+  width: 590px;
+  height: auto;
+  padding: 20px;
+}
+
+.widget--AtS .handle-right {
+  display: inline-block;
+  width: 400px;
+  height: auto;
+  padding: 20px 0px 20px 0px;
+}
+
+.widget--AtS .ernst-logo {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.widget--AtS .title {
+  display: inline-block;
+  width: 550px;
+  height: 38px;
+  color: #333333;
+  font-size: 26px;
+  letter-spacing: 0.8px;
+  line-height: 38px;
+  font-weight: 900;
+}
+
+.widget--AtS .description {
+  display: inline-block;
+  width: 550px;
+  min-height: 30px;
+  margin-top: 10px;
+  color: #333333;
+  font-size: 14px;
+  letter-spacing: 0.43px;
+  line-height: 29px;
+}
+
+.widget--AtS .buttons {
+  display: inline-block;
+  height: 60px;
+  width: 180px;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.62px;
+  line-height: 24px;
+  margin-right: 20px;
+}
+
+.widget--AtS .guide {
+  background-color: #9ad0B8;
+}
+
+.widget--AtS .link {
+  background-color: #004F3A;
+}
+
+.widget--AtS .text {
+  margin: 18px 0px 18px 0px;
+}
+
+.widget--AtS .text a {
+  color: #FFF;
+}
+
+/* ==================================================
+    Design guides
+   ================================================== */
+.widget--designguides-head-image {
+  height: 313px;
+  width: 1128px;
+}
+
+.widget--designguides-head-image .title {
+  height: 63px;
+  width: 671px;
+  color: #FFF;
+  font-weight: 900;
+  font-size: 52px;
+  letter-spacing: 1.6px;
+  line-height: 38px;
+  margin: 126px 384px 124px 73px;
+}
+
+.widget--designguides-title {
+  height: 49px;
+  width: 425px;
+  color: #333333;
+  font-size: 40px;
+  letter-spacing: 0.6px;
+  line-height: 47px;
+}
+
+.widget--designguides-brand-box .ernst-brand {
+  height: 193px;
+  width: 359px;
+}
+
+.widget--designguides-brand-box, .widget--designguides-logo-box {
+  height: 193px;
+  width: 359px;
+  border-radius: 6px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer !important;
+}
+
+.widget--designguides-brand-box-mini .ernst-brand {
+  height: 142px;
+  width: 264px;
+}
+
+.widget--designguides-brand-box-mini, .widget--designguides-logo-box {
+  height: 142px;
+  width: 264px;
+  border-radius: 6px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer !important;
+}
+
+.widget--designguides-templates-box, .widget--designguides-briefing-box {
+  border-radius: 6px;
+  font-size: 18px;
+  letter-spacing: 0.33px;
+  line-height: 25px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  height: 355px;
+  float: left;
+  overflow-y: overlay;
+}
+
+.widget--designguides-email-signature {
+  height: 245;
+  width: 359px;
+  border-radius: 6px;
+  background-color: #FFF;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer !important;
+}
+
+.widget--designguides-templates-box .directory-entry-block__thumbnail {
+  border-radius: 0px !important;
+  height: 55px !important;
+}
+
+.widget--designguides-brand-box:hover,
+.widget--designguides-brand-box:focus,
+.widget--designguides-email-signature:hover,
+.widget--designguides-email-signature:focus {
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.22) !important;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.22) !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
+}
+
+/* ==================================================
+                KPI boxes (Phase 3)
+   =================================================== */
+.widget--kpi {
+  height: 400px;
+  width: 450px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  opacity: 0.9;
+}
+
+.widget--kpi .key-background {
+  background-color: #FFF;
+  background-image: url(https://sites.lumapps.com/serve/AMIfv97aJVaMqjxaRz2yGjGNNiJp6GbvHVCwGvrGGYQKgHw3EOSTWYgnx_qkxV2YDuxe-nsSVY5yCwYn_gG_sbsukMTZfo5Kyqh5snZRavF8_QtmFg7VJmRppif7Yu0AEzd8KYyDKz1tZV00U8JW65zSLxUuGgNGoA/kpi-background-green.svg);
+  background-repeat: no-repeat;
+  padding-bottom: 2px;
+  opacity: 0.8;
+}
+
+.widget--kpi .widget-content {
+  overflow-y: hidden !important;
+}
+
+.widget--kpi .widget-slideshow {
+  padding: 0px !important;
+}
+
+.widget--kpi .widget-slideshow__block {
+  padding: 0px !important;
+}
+
+.widget--kpi .widget-slideshow__controls {
+  display: none;
+}
+
+/* Key-kpi */
+.widget--kpi-key .key-information {
+  display: inline-block;
+  height: 190px;
+  width: 225px;
+  color: #333333;
+  text-align: center;
+}
+
+.widget--kpi-key .key-data {
+  display: block;
+  margin: 40px 15px 19px 15px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #004F3A !important;
+}
+
+.widget--kpi-key .key-logo {
+  display: block;
+  height: 50px;
+  width: 50px;
+  margin: 0px 72px 0px 72px;
+  background-size: cover;
+}
+
+.widget--kpi-key .key-title {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.39px;
+  line-height: 28px;
+  margin-top: 10px;
+}
+
+.widget--kpi-key .key-sub-title {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 0.26px;
+  line-height: 19px;
+  margin-top: 5px;
+}
+
+.widget--kpi-key .key-text {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #004F3A !important;
+}
+
+/* ==================================================
+Alert
+================================================== */
+/* Lines */
+.widget--alert {
+  background-size: 55px;
+  background-position: bottom -1px right 40px;
+}
+
+/* Hide slideshow control buttons */
+.widget--alert .widget-slideshow__controls {
+  display: none !important;
+}
+
+.widget--alert .widget-slideshow__block {
+  padding: 0px 0px 0px 12px;
+}
+
+.widget--alert .content-block--default-style:last-child {
+  margin-bottom: -10px;
+}
+
+/* Title style */
+.widget--alert .content-block-title {
+  margin-bottom: 10px;
+  height: 37px;
+  padding-left: 12px;
+  font-size: 24px !important;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+/* Title link color */
+.widget--alert .content-block-title a {
+  color: #FFF !important;
+}
+
+/* Paragraph style */
+.widget--alert .content-block-excerpt p {
+  padding: 5px 180px 5px 0px;
+  color: #FFF;
+  font-size: 14px !important;
+  margin: 5px 0;
+}
+
+/* Responsive settings */
+@media screen and (max-width: 1024px) {
+  .widget--alert .content-block-excerpt p {
+    padding: 2em 0 0 0 !important;
+  }
+  .widget--alert .widget-slideshow--group-by-2 .widget-slideshow__block {
+    max-width: 100% !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important;
+    padding: 0px 0px 0px 12px;
+  }
+}
+
+.widget--breadcrumbs .widget-breadcrumb__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px 20px 0px;
+}
+
+.widget--breadcrumbs .widget-breadcrumb__wrapper a {
+  color: #004F3A !important;
+}
+
+/* ==================================================
+    Digilab (courses)
+  =================================================== */
+.widget--digilab {
+  color: #000000;
+}
+
+.widget--digilab .ernst-icon {
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+}
+
+.component-cell--digilab-footer .component-widget {
+  margin: 0px -20px !important;
+}
+
+.widget--digilab .info-text {
+  color: #333333;
+  font-weight: 300;
+  opacity: 0.8;
+  font-size: 14px;
+  letter-spacing: 0.55px;
+  line-height: 29px;
+}
+
+.component-cell--digilab-praktisk-info {
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 !important;
+          flex: 0 !important;
+}
+
+.widget--kursus-aaben .button {
+  height: 60px;
+  border-radius: 6px;
+  background-color: #004F3A;
+  cursor: pointer;
+  color: #FFF;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.62px;
+  line-height: 24px;
+  padding-top: 20px;
+}
+
+.widget--kursus-aaben .button::before {
+  content: "Tilmeld";
+}
+
+.widget--kursus-lukket .button {
+  background-color: #A94838;
+  cursor: not-allowed;
+  pointer-events: none;
+  text-decoration: none;
+  height: 60px;
+  border-radius: 6px;
+  color: #FFF;
+  text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.62px;
+  line-height: 24px;
+  padding-top: 20px;
+}
+
+.widget--kursus-lukket .button::before {
+  content: "Lukket for tilmelding";
+}
+
+/* ==================================================
+Medarbejderfordele og tilbud
+================================================== */
+.widget--sticky_create .sticky {
+  height: 46px;
+  width: 46px;
+  border-radius: 23px;
+  background-color: #9ad0B8;
+  font-size: 30px;
+  cursor: pointer;
+  color: #FFF;
+  text-align: center;
+  margin: 14px 0px 0px 10px;
+}
+
+.widget--medarbejdertilbud .content-block__thumbnail {
+  height: 120px !important;
+  width: 190px !important;
+  border-radius: 6px !important;
+}
+
+.widget--sociale-arrangementer .button {
+  height: 30px;
+  float: right;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.62px;
+  line-height: 24px;
+  padding-top: 5px;
+  font-size: 14px;
+}
+
+.widget--sociale-arrangementer .aktiv {
+  width: 100px;
+  background-color: #9ad0B8;
+  cursor: pointer;
+  border-radius: 6px;
+  color: #FFF;
+}
+
+.widget--sociale-arrangementer .aktiv::before {
+  content: "Tilmeld";
+}
+
+.widget--sociale-arrangementer .passiv {
+  width: 180px;
+  color: #9ad0B8;
+  background-color: transparent;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.widget--sociale-arrangementer .passiv::before {
+  content: "Kan ikke tilmeldes endnu";
+}
+
+.widget--sociale-arrangementer .lukket {
+  width: 150px;
+  background-color: transparent;
+  color: #A94838;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.widget--sociale-arrangementer .lukket::before {
+  content: "Lukket for tilmelding";
+}
+
+.widget--sociale-arrangementer .widget-header {
+  margin-bottom: -25px;
+}
+
+/* ==================================================
+    Community (Fælleskab)
+    ================================================== */
+/* remove scrollbar */
+.component-cell--no-scrollbar .component-cell__components {
+  overflow: hidden !important;
+}
+
+.widget--no-scrollbar .widget-content--has-fixed-height {
+  overflow: hidden !important;
+}
+
+/* Follow button */
+.widget--community .follow-button__subscribe {
+  border-radius: 2px !important;
+}
+
+.widget--community .community-block--view-mode-grid {
+  margin-bottom: 10px !important;
+}
+
+.widget--community {
+  /* Community post text */
+  /* Community post header meta */
+  /* Community post header author */
+  /* Community thumbnail - created because of .SVG files reaches edges, and is therefore not controlled*/
+}
+
+.widget--community .follow-button--not-followed .follow-button__subscribe {
+  color: #FFF !important;
+  background-color: #004F3A !important;
+}
+
+.widget--community .follow-button--is-followed {
+  border-color: #004F3A !important;
+  background-color: #FFF !important;
+}
+
+.widget--community .follow-button--is-followed .follow-button__subscribe, .widget--community .follow-button--is-followed .follow-button__notification {
+  color: #004F3A !important;
+}
+
+.widget--community .post-block-content__content {
+  color: #333333;
+  font-size: 18px;
+  letter-spacing: 0.55px;
+}
+
+.widget--community .post-block-header__meta {
+  color: #004F3A;
+  letter-spacing: 0.37px;
+}
+
+.widget--community .post-block-header__author {
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 0.49px;
+}
+
+.widget--community .community-block--view-mode-grid .community-block__thumbnail {
+  background: round;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.widget--community .widget-featured-image__image {
+  height: 160px !important;
+  background-color: rgba(0, 0, 0, 0.02);
+  width: 267px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.widget--community .post-block-header__community {
+  color: #004F3A !important;
+}
+
+.widget--community-text {
+  color: #333333;
+  font-size: 18px;
+  letter-spacing: 0.55px;
+  line-height: 25px;
+}
+
+/* Community title */
+.widget--community-title .widget-title__title {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #333333;
+  font-size: 26px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  line-height: 31px;
+}
+
+.widget--viden-info {
+  background-color: #004F3A !important;
+}
+
+.widget--viden-info ul, .widget--viden-info li, .widget--viden-info ol, .widget--viden-info li, .widget--viden-info a, .widget--viden-info p {
+  color: #FFF !important;
+}
+
+.widget--link-primary .widget-footer .widget-wrapper {
+  border-color: #004F3A !important;
+}
+
+.widget--link-primary a {
+  color: #004F3A !important;
+}
+
+.filter-pane__footer button {
+  background-color: #004F3A;
+  color: #FFF;
+}
+
+.filter-pane__footer button:hover {
+  background-color: #9ad0B8;
+}
+
+.sidebar .sidebar-header {
+  background-color: #004F3A;
+}
+
+.widget--email-signature {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.widget--email-signature p, .widget--email-signature span, .widget--email-signature a {
+  font-family: Arial, 'Trebuchet MS' !important;
+}
+
+.widget--email-signature .signature .data-fullname p {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.widget--email-signature .signature .data-common p, .widget--email-signature .signature .data-common span, .widget--email-signature .signature .data-common a {
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none !important;
+  color: #000000 !important;
+}
+
+.widget--email-signature .signature .data-brand {
+  margin: 17px 0px;
+}
+
+.widget--email-signature .signature .data-brand img {
+  height: 13px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+.widget--email-signature .signature .data-brand-all {
+  border-top: 1px solid #9ad0B8;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.widget--email-signature .signature .data-brand-all img {
+  height: 21px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.widget--bt .signature .data-fullname p {
+  color: #F03228;
+}
+
+.widget--bt .signature .data-brand img {
+  height: 35px;
+}
+
+.widget--euroinvestor .signature .data-fullname p {
+  color: #0177FF;
+}
+
+.widget--euroinvestor .signature .data-brand img {
+  height: 38px;
+}
+
+.widget--berlingske .signature .data-fullname p {
+  color: #000000;
+}
+
+.widget--berlingske .signature .data-brand img {
+  height: 40px;
+}
+
+.widget--weekendavisen .signature .data-fullname p {
+  color: #41a8e2;
+}
+
+.widget--weekendavisen .signature .data-brand img {
+  height: 24px;
+}
+
+.widget--bm .signature .data-fullname p {
+  color: #004F3A;
+}
+
+/* ==================================================
+Kundeindsigter
+================================================== */
+.widget--kundeindsigter .mdc-tab-bar {
+  background-color: #FFF !important;
+  height: 70px !important;
+}
+
+.widget--kundeindsigter .mdc-tab, .mdc-tab-scroller, .mdc-tab-scroller__scroll-area, .mdc-tab-scroller__scroll-content {
+  height: inherit !important;
+}
+
+.widget--kundeindsigter .mdc-tab-indicator .mdc-tab-indicator__content--underline {
+  border-top-width: 5px !important;
+  border-radius: 100px;
+}
+
+.widget--kundeindsigter .mdc-tab-indicator .mdc-tab-indicator__content {
+  -webkit-transition: 250ms ease-in-out;
+  transition: 250ms ease-in-out;
+}
+
+/*
+.widget--kundeindsigter .material-icons {
+font-size: 30px !important;
+margin-bottom: 5px !important;
+}*/
+.widget--kundeindsigter .mdc-tab {
+  font-size: 17px !important;
+}
+
+.component-row--kundeindsigter {
+  display: block;
+}
+
+.widget--markedsindsigt-standard {
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer !important;
+  border-radius: 6px;
+}
+
+.widget--markedsindsigt-standard .markedsindsigt-standard {
+  width: 264px;
+  height: 142px;
+  margin: 0px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.widget--markedsindsigt-standard .markedsindsigt-standard p a {
+  display: block;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  padding: 30px 20px;
+  line-height: 1.15;
+  color: #004F3A;
+}
