@@ -1,20 +1,3 @@
-/**
- * @env: lumsites
- * @customerName: Persgroep
- * @customerId: 5284250454851584
- * @account: lumapps-admin@persgroep.net
- *
- * @instanceName: Ernst
- * @instanceId: 6022693771280384
- *
- * @styleName: Default
- * @styleId: 5490185338093568
- * @styleType: Global site
- * @kind: custom
- *
- * @url: https://sites.lumapps.com/a/persgroep/ernst
- */
-
 @charset "UTF-8";
 body {
   background-color: #F5F5F5 !important;
